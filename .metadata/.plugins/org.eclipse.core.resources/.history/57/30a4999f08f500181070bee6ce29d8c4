@@ -1,0 +1,13 @@
+package utils;
+
+public class Codigo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//remplaza caracteres
+		String cad="U0001";
+		System.out.println(cad.replace('1', '2'));
+		//System.out.println(cad.replace("dor", "ción"));
+	}
+
+}

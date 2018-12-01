@@ -1,0 +1,34 @@
+package Ejrcicios;
+
+public class practica {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String e="luis-M,pedro-M,fernandez-M,luz-F,ana-M,maria-M";
+		
+		String [] s= e.split(",");
+		int Cont1=0;
+		int Cont2=0;
+		int Cont3=0;
+		int Cont4=0;
+		for (String aux:s) {
+			if(aux.endsWith("a")) Cont1++;
+			if(aux.startsWith("a")) Cont2++;
+			if(aux.endsWith("a")||aux.endsWith("e")||
+					aux.endsWith("i")||aux.endsWith("o")||
+					aux.endsWith("u")) Cont3++;
+			if(aux.startsWith("a")||aux.startsWith("e")||
+					aux.startsWith("i")||aux.startsWith("o")||
+					aux.startsWith("u")) Cont4++;
+		}
+		System.out.println("personas  "+s.length);
+		System.out.println("personas que inicien en a "+Cont1);
+		System.out.println("personas que terminen en a "+Cont2);
+		System.out.println("personas que inicien en vocales "+Cont3);
+		System.out.println("personas que terminen en vocales "+Cont4);
+		
+		
+
+	}
+
+}
